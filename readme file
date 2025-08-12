@@ -1,0 +1,37 @@
+# Task 6: Sales Trend Analysis Using Aggregations
+
+## Description
+This repository contains the solution for Task 6 which involves analyzing monthly revenue and order volume using SQL aggregations on sales data.
+
+## Dataset
+- Dataset used: Sample - Superstore  
+- Table: `Sample - Superstore`  
+- Key columns:  
+  - `Order Date` (date of the order)  
+  - `Sales` (amount of the sale)  
+  - `Order ID` (unique identifier for each order)
+
+## Objective
+- Extract year and month from the order date.  
+- Calculate total revenue per month and year.  
+- Count the distinct number of orders per month and year.  
+- Group data by year and month.  
+- Sort the results chronologically.
+
+## SQL Script
+The main SQL script (`sales_trend_analysis.sql`) includes:  
+- Conversion of the order date from string to date format.  
+- Cleaning the sales data to remove currency symbols and spaces.  
+- Aggregation functions SUM() and COUNT(DISTINCT).  
+- Filtering data for specific time periods using WHERE clause.
+
+## How to Use
+1. Load the `Sample - Superstore` dataset into your SQL environment.  
+2. Run the `sales_trend_analysis.sql` script.  
+3. Review the output table showing monthly total revenue and order counts.
+
+## Results
+- The `results.csv` file contains the output of the query for the years 2015 and 2016.
+
+---
+
